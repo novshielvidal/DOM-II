@@ -39,15 +39,14 @@ images.forEach(image => {
     });
 });
 
-//  Create dropzone
-const dropZone = document.createElement('div');
-    document.body.appendChild(dropZone);
-console.log(dropZone);
-
-//  Event Listener 6 - dragenter
-// images.forEach(image => {
-//     image.addEventListener{'dragenter', (enter) => {
-
-//     }}
-// })
+//  Event Listener 6 - dblclick and click
+const paragraphText = document.querySelectorAll('p');
+paragraphText.forEach(text => {
+    text.addEventListener('dblclick', (event) => {
+        event.target.style.color = "orange";
+    });
+    text.addEventListener('click', (event) => {
+        event.target.style.color = "#212529";
+    })
+});
 
