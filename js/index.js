@@ -39,7 +39,7 @@ images.forEach(image => {
     });
 });
 
-//  Event Listener 6 - dblclick and click
+//  Event Listener 6 - dblclick (and click)
 const paragraphText = document.querySelectorAll('p');
 paragraphText.forEach(text => {
     text.addEventListener('dblclick', (event) => {
@@ -50,3 +50,19 @@ paragraphText.forEach(text => {
     })
 });
 
+
+//  Create canvas
+const canvasWrapper = document.createElement('div');
+canvasWrapper.style.textAlign = 'center';
+canvasWrapper.style.margin = '20px';
+
+const canvasArea = document.createElement('canvas');
+canvasWrapper.append(canvasArea);
+canvasArea.width = 600;
+canvasArea.height = 300;
+canvasArea.style.border = '1px solid #212529';
+canvasArea.style.margin = '20px';
+
+document.body.insertBefore(canvasWrapper, document.querySelector('footer'));
+
+//  Event Listener 7 - 
